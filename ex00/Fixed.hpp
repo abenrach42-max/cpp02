@@ -23,7 +23,11 @@ class Fixed
         static const int    nb_fractio_bits;
     public:
         Fixed(void);
+        Fixed(const Fixed &cpy_obj);
+        Fixed &operator=(const Fixed &src);
         ~Fixed(void);
+        int     getRawBits(void) const;
+        void    setRawBits(int const raw);
 };
 
 #endif
