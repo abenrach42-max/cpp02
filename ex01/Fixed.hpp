@@ -29,7 +29,6 @@ class Fixed
         Fixed(const Fixed &cpy_obj);
         Fixed &operator=(const Fixed &src);
         ~Fixed(void);
-        Fixed   std::ostream &operator<<(std::ostream &os, const Fixed *f)
         float   toFloat(void) const;
         int     toInt(void) const;
         int     getRawBits(void) const;
